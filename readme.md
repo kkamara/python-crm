@@ -4,6 +4,8 @@
 
 * [Installation](#installation)
 
+* [Add testing seed data](#add-testing-seed-data)
+
 * [Usage](#usage)
 
 * [Using Docker](#using-docker)
@@ -31,6 +33,16 @@ cp .env.example .env
 pip3 install virtualenv && \
   virtualenv env && \
   source env/bin/activate
+```
+
+##### Add testing seed data
+
+Example:
+
+Load data [user.json](https://github.com/kkamara/python-crm/blob/main/crm_users/fixtures/user.json) into database.
+
+```bash
+py manage.py loaddata user
 ```
 
 ## Usage
