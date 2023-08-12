@@ -4,7 +4,8 @@ from django.conf import settings
 from datetime import datetime
 
 class User(models.Model):
-    user_created = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True)
+    user_assoc = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=None)
+    user_created = models.IntegerField(blank=True)
     username = models.CharField(max_length=255, unique=True)
     contact_number = models.CharField(max_length=255, blank=True)
     street_name = models.CharField(max_length=255, blank=True)
