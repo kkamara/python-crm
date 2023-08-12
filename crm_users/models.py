@@ -5,11 +5,11 @@ from datetime import datetime
 
 class User(models.Model):
     user_assoc = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, default=None)
-    user_created = models.IntegerField(blank=True)
+    user_created = models.IntegerField(blank=True, default=0)
     username = models.CharField(max_length=255, unique=True)
-    contact_number = models.CharField(max_length=255, blank=True)
-    street_name = models.CharField(max_length=255, blank=True)
-    building_number = models.CharField(max_length=255, blank=True)
-    city = models.CharField(max_length=255, blank=True)
-    postcode = models.CharField(max_length=255, blank=True)
+    contact_number = models.CharField(max_length=255, blank=True, default=None)
+    street_name = models.CharField(max_length=255, blank=True, default=None)
+    building_number = models.CharField(max_length=255, blank=True, default=None)
+    city = models.CharField(max_length=255, blank=True, default=None)
+    postcode = models.CharField(max_length=255, blank=True, default=None)
     date_updated = models.DateTimeField(default=datetime.now, blank=True)
