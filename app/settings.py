@@ -67,6 +67,10 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
   'corsheaders',
+  'crm_clients',
+  'crm_logs',
+  'crm_dashboard',
+  'crm_users',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
