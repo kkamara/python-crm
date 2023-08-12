@@ -24,6 +24,6 @@ urlpatterns = [
     path('api/v1/auth/', include('djoser.urls.authtoken')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-admin.site.site_header = 'Django App'
-admin.site.site_title = 'Django App Admin Portal'
-admin.site.index_title = 'Welcome to the Django App Portal'
+admin.site.site_header = 'Client Relational Management System'
+admin.site.site_title = f'{admin.site.site_header} Admin Portal'
+admin.site.index_title = f'Welcome to the {admin.site.site_header} Portal'
