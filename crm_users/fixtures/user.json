@@ -1,0 +1,28 @@
+[
+  {
+    "model": "crm_users.user",
+    "pk": 1,
+    "fields": {
+      "user_assoc": 1,
+      "username": "fugiat",
+      "contact_number": "972.406.4274",
+      "street_name": "Officia dolor",
+      "building_number": "532",
+      "city": "Culpa",
+      "postcode": "Excepteur"
+    }
+  },
+  {
+    "model": "crm_users.user",
+    "pk": 2,
+    "fields": {
+      "user_assoc": 1,
+      "username": "adanim",
+      "contact_number": "550.912.6195",
+      "street_name": "Aute ipsum",
+      "building_number": "2546A",
+      "city": "Adipisicing",
+      "postcode": "Proident"
+    }
+  }
+]
