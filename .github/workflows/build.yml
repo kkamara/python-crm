@@ -52,6 +52,10 @@ jobs:
       run: sed -i "s/3306/${{ job.services.mysql.ports['3306'] }}/g" .env.testing
     - name: Create environment file
       run: cp .env.testing .env
+    - name: Prepare database tables
+      run: |
+        mkdir crm_users/migrations
+        touch crm_users/migrations/__init__.py
     - name: Create database tables
       run: |
         python manage.py makemigrations
