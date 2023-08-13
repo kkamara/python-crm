@@ -1,0 +1,11 @@
+[
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can create log",
+      "content_type_id": 10,
+      "codename": "create_log"
+    }
+  }
+]
