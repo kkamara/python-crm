@@ -5,7 +5,106 @@
     "fields": {
       "name": "Can create log",
       "content_type_id": 10,
-      "codename": "create_log"
+      "codename": "crm_create_log"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can edit log",
+      "content_type_id": 10,
+      "codename": "crm_edit_log"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete log",
+      "content_type_id": 10,
+      "codename": "crm_delete_log"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view log",
+      "content_type_id": 10,
+      "codename": "crm_view_log"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can create client",
+      "content_type_id": 10,
+      "codename": "crm_create_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can edit client",
+      "content_type_id": 10,
+      "codename": "crm_edit_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete client",
+      "content_type_id": 10,
+      "codename": "crm_delete_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view client",
+      "content_type_id": 10,
+      "codename": "crm_view_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can create user",
+      "content_type_id": 10,
+      "codename": "crm_create_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can edit user",
+      "content_type_id": 10,
+      "codename": "crm_edit_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete user",
+      "content_type_id": 10,
+      "codename": "crm_delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view user",
+      "content_type_id": 10,
+      "codename": "crm_view_user"
     }
   }
 ]
