@@ -42,6 +42,7 @@ Example:
 Load data [user.json](https://github.com/kkamara/python-crm/blob/main/crm_users/fixtures/user.json) into database.
 
 ```bash
+py manage.py loaddata app/fixtures/auth_user
 py manage.py loaddata user
 ```
 
