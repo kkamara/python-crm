@@ -71,6 +71,7 @@ jobs:
     - name: Run database seed fixtures
       run: |
         python manage.py loaddata permission
+        python manage.py loaddata auth_group
         python manage.py loaddata user
     - name: Run Tests
       run: |
