@@ -72,6 +72,7 @@ jobs:
       run: |
         python manage.py loaddata permission
         python manage.py loaddata auth_group
+        python manage.py loaddata auth_group_permissions
         python manage.py loaddata user
     - name: Run Tests
       run: |
