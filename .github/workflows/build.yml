@@ -50,6 +50,10 @@ jobs:
         pip install -r requirements.txt
     - name: Create environment file
       run: cp .env.testing .env
+    - name: Run database seed fixtures
+      run: |
+        python manage.py loaddata permission
+        python manage.py loaddata user
     - name: Run Tests
       run: |
         python manage.py test
