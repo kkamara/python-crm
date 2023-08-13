@@ -61,13 +61,7 @@ jobs:
         python manage.py makemigrations
         python manage.py migrate
     - name: Create super user
-      run: |
-        export DJANGO_SUPERUSER_PASSWORD=secret
-
-        python manage.py createsuperuser \
-          --username admin_user \
-          --email admin@django-app.com \
-          --no-input
+      run: python manage.py loaddata app/fixtures/auth_user
     - name: Run database seed fixtures
       run: |
         python manage.py loaddata permission
