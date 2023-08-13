@@ -48,8 +48,8 @@ py manage.py loaddata user
 ## Usage
 
 ```bash
-# alias py3="python3"
-py3 manage.py runserver 3000
+# alias py="python3"
+py manage.py runserver 3000
 # http://localhost:3000
 ```
 
@@ -65,13 +65,13 @@ compose up
 ## iPython Django Shell
 
 ```bash
-  py3 manage.py shell -i ipython
+  py manage.py shell -i ipython
 ```
 
 ## API
 
 ```bash
-  py3 manage.py show_urls
+  py manage.py show_urls
 ```
 
 View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyxQYrt).
@@ -83,7 +83,7 @@ Admin creds are set in [./compose/local/django/start](https://raw.githubusercont
 ```bash
 export DJANGO_SUPERUSER_PASSWORD=secret
 
-py3 manage.py createsuperuser \
+py manage.py createsuperuser \
   --username admin_user \
   --email admin@django-app.com \
   --no-input
@@ -92,7 +92,7 @@ py3 manage.py createsuperuser \
 ## Cache react app & view templates <a name="cache-templates"></a>
 
 ```bash
-py3 manage.py collectstatic
+py manage.py collectstatic
 ```
 
 ## Mail Server
